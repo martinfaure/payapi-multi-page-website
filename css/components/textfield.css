@@ -1,0 +1,5 @@
+:root {
+	--form-text-field-normal-state: #9ba9b5;
+	--form-text-field-active-state: #36536b;
+	--form-text-field-active-state-error: #ff0000;
+}

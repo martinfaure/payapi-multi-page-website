@@ -1,0 +1,13 @@
+:root {
+	--button-primary-normal-state: #ba4270;
+	--button-primary-hover-state: #da6d97;
+	--button-primary-disable-state: #dda1b8;
+
+	--button-secondary-disable-state-light-border: #1b262f;
+	--button-secondary-hover-state-light-bodys: #ffffff;
+	--button-secondary-disable-state-light-border: #8b9197;
+
+	--button-secondary-disable-state-dark-border: #ffffff;
+	--button-secondary-hover-state-dark-body: #36536b;
+	--button-secondary-disable-state-dark-border: #9ba9b5;
+}
