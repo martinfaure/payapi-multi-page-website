@@ -3,6 +3,11 @@
 	--button-primary-hover-state: #da6d97;
 	--button-primary-disable-state: #dda1b8;
 
+	--button-primary-nomal-state-txt-color: #ffffff;
+	--button-primary-nomal-state-border: none;
+	--button-primary-nomal-state-border-radius: 24px;
+	--button-primary-nomal-state-padding: 13px;
+
 	--button-secondary-disable-state-light-border: #1b262f;
 	--button-secondary-hover-state-light-bodys: #ffffff;
 	--button-secondary-disable-state-light-border: #8b9197;
@@ -10,4 +15,23 @@
 	--button-secondary-disable-state-dark-border: #ffffff;
 	--button-secondary-hover-state-dark-body: #36536b;
 	--button-secondary-disable-state-dark-border: #9ba9b5;
+}
+
+.btn-primary-light {
+	display: block;
+	color: var(--button-primary-nomal-state-txt-color);
+	border: var(--button-primary-nomal-state-border);
+	background-color: var(--button-primary-normal-state);
+	border-radius: var(--button-primary-nomal-state-border-radius);
+	padding: var(--button-primary-nomal-state-padding);
+}
+
+.btn-primary-light-hero {
+	display: block;
+	color: var(--button-primary-nomal-state-txt-color);
+	border: var(--button-primary-nomal-state-border);
+	background-color: var(--button-primary-normal-state);
+	border-radius: var(--button-primary-nomal-state-border-radius);
+	padding: var(--button-primary-nomal-state-padding);
+	width: 100%;
 }

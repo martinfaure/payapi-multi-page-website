@@ -6,21 +6,43 @@
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" href="/css/components/button.css" />
+		<link rel="stylesheet" href="css/components/button.css" />
+		<link rel="stylesheet" href="css/home.css" />
 		<title>payapi-multi-page-website</title>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<img src="/assets/header/logo.svg" alt="" />
-				<img src="/assets/header/burger.svg" alt="" />
-				<ul>
-					<li><a href="/pages/about.html">About</a></li>
-					<li><a href="/pages/contact.html">Contact</a></li>
-					<li><a href="/pages/pricing.html">Pricing</a></li>
-				</ul>
-				<a href=""><button>Schedule a Demo</button></a>
-			</nav>
+			<div class="borderback">
+				<nav>
+					<div class="nav1">
+						<div class="burgeralign">
+							<img src="assets/header/logo.svg" alt="" />
+							<img class="burger" src="assets/header/burger.svg" alt="" />
+						</div>
+						<ul>
+							<li><a href="pages/about.html">About</a></li>
+							<li><a href="pages/contact.html">Contact</a></li>
+							<li><a href="pages/pricing.html">Pricing</a></li>
+						</ul>
+					</div>
+					<div class="none-button">
+						<a class="btn1" href=""
+							><button class="btn-primary-light">Schedule a Demo</button></a
+						>
+					</div>
+				</nav>
+			</div>
 		</header>
+		<main>
+			<section>
+				<img class="phone-hero" src="assets/main/phone/telephone1.svg" alt="" />
+				<h1>Start building with our APIs for absolutely free.</h1>
+				<input type="email" name="email" placeholder="Enter email adress" />
+				<a href=""
+					><button class="btn-primary-light-hero">Schedule a Demo</button></a
+				>
+				<p>Have any questions? <a href=""> Contact Us</a></p>
+			</section>
+		</main>
 	</body>
 </html>

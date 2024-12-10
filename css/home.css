@@ -1,0 +1,42 @@
+:root {
+	--hero--h1-large-taille: 32px;
+	--hero--h1-large-color: #36536b;
+}
+
+.phone-hero {
+	position: relative;
+	z-index: -1;
+	top: 50px;
+	margin: auto;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+input {
+	width: 60%;
+	box-shadow: 0px 7px 8px 5px rgba(0, 0, 0, 0.3);
+	border: none;
+	padding: 13px;
+	border-radius: 24px;
+}
+
+h1 {
+	font-family: var(--font-family);
+	color: var(--hero--h1-large-color);
+	font-size: var(--hero--h1-large-taille);
+}
+
+p {
+	font-family: var(--font-family-red-hat);
+}
+
+@media screen and (min-width: 1024px) {
+	.borderback {
+		border-radius: 100% 0% 25% 75% / 0% 89% 11% 100%;
+	}
+}

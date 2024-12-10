@@ -10,7 +10,9 @@
 	--color-primary-dark-pink: #ba4270;
 	--color-primary-link-water-white: #ba4270;
 
-	--color-secondary-san-juan-blue: #36536b;
+	--color-secondary-san-juan-blue: #6e8396;
+	--color-secondary-san-juan-blue-hover: #36536b;
+
 	--color-secondary-mirage-blue: #1b262f;
 	--color-secondary-charm-pink: #da6d97;
 	--color-secondary-light-san-juan-blue: #6c8294;
@@ -22,4 +24,88 @@
 	--typography-heading-h3-small: 25px;
 	--typography-heading-h4: 32px;
 	--typography-body: 28px;
+
+	--typography-a-weight: 700;
+
+	--nav-padding: 40px;
+}
+
+ul {
+	display: none;
+}
+
+.btn-primary-light {
+	display: none;
+}
+
+nav {
+	display: flex;
+	padding: var(--nav-padding);
+}
+
+.btn1 {
+	display: none;
+}
+
+.nav1 {
+	display: flex;
+}
+
+.burgeralign {
+	display: flex;
+	justify-content: space-between;
+}
+
+.borderback {
+	position: absolute;
+	width: 100%;
+	height: 25vh;
+	background-color: #eef1f4;
+	z-index: -1;
+	border-radius: 0px 0px 80% 80%;
+}
+
+@media screen and (min-width: 767px) {
+	nav {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav1 {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.burger {
+		display: none;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--color-secondary-san-juan-blue);
+		font-family: var(--font-family-red-hat);
+		font-weight: var(--typography-a-weight);
+	}
+
+	.btn1 {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	a:hover {
+		color: var(--color-secondary-san-juan-blue-hover);
+	}
+
+	.alignnav {
+		gap: 20px;
+	}
 }
