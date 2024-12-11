@@ -1,11 +1,12 @@
 :root {
 	--hero--h1-large-taille: 32px;
+	--hero--h1-large-taille-desk: 72px;
 	--hero--h1-large-color: #36536b;
 }
 
 .phone-hero {
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 	top: 50px;
 	margin: auto;
 }
@@ -14,29 +15,49 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
 }
 
 input {
-	width: 60%;
-	box-shadow: 0px 7px 8px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 6px 5px 2px 0px rgba(0, 0, 0, 0.3);
 	border: none;
 	padding: 13px;
 	border-radius: 24px;
+	font-family: var(--font-family-red-hat);
+	font-weight: var(--typography-a-weight);
 }
 
 h1 {
 	font-family: var(--font-family);
 	color: var(--hero--h1-large-color);
 	font-size: var(--hero--h1-large-taille);
+	text-align: center;
 }
 
 p {
 	font-family: var(--font-family-red-hat);
 }
 
-@media screen and (min-width: 1024px) {
-	.borderback {
-		border-radius: 100% 0% 25% 75% / 0% 89% 11% 100%;
-	}
+.hero-input-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.contact-link {
+	color: var(--color-secondary-light-san-juan-blue);
+}
+
+.a-contact {
+	color: var(--color-secondary-light-san-juan-blue);
+	font-weight: var(--typography-a-weight);
 }

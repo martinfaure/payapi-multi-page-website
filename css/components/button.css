@@ -26,12 +26,14 @@
 	padding: var(--button-primary-nomal-state-padding);
 }
 
-.btn-primary-light-hero {
+.btn-hero {
 	display: block;
 	color: var(--button-primary-nomal-state-txt-color);
 	border: var(--button-primary-nomal-state-border);
 	background-color: var(--button-primary-normal-state);
 	border-radius: var(--button-primary-nomal-state-border-radius);
 	padding: var(--button-primary-nomal-state-padding);
-	width: 100%;
+	font-family: var(--font-family-red-hat);
+	font-weight: var(--typography-a-weight);
+	margin: 20px;
 }

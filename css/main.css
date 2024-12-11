@@ -18,6 +18,7 @@
 	--color-secondary-light-san-juan-blue: #6c8294;
 
 	--typography-heading-h1-large: 72px;
+	--typography-heading-h1-tablet: 48px;
 	--typography-heading-h1-small: 56px;
 	--typography-heading-h2: 56px;
 	--typography-heading-h3-big: 40px;
@@ -28,6 +29,12 @@
 	--typography-a-weight: 700;
 
 	--nav-padding: 40px;
+
+	--typography-heading-h1-tablet-weight: 48px;
+}
+
+body {
+	background-color: #edf3f8;
 }
 
 ul {
@@ -38,53 +45,39 @@ ul {
 	display: none;
 }
 
-nav {
+.nav1 {
 	display: flex;
-	padding: var(--nav-padding);
+	justify-content: space-between;
+}
+
+nav {
+	margin: 20px;
 }
 
 .btn1 {
 	display: none;
 }
 
-.nav1 {
-	display: flex;
-}
-
-.burgeralign {
-	display: flex;
-	justify-content: space-between;
-}
-
 .borderback {
 	position: absolute;
 	width: 100%;
 	height: 25vh;
-	background-color: #eef1f4;
+	background-color: #d2dbe3;
 	z-index: -1;
 	border-radius: 0px 0px 80% 80%;
 }
 
+.phone-hero {
+	z-index: 0;
+	margin: auto;
+}
+
 @media screen and (min-width: 767px) {
-	nav {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	.nav1 {
-		flex-direction: row;
-		align-items: center;
-	}
-
-	.burger {
-		display: none;
-	}
-
 	ul {
 		display: flex;
 		flex-direction: row;
 		gap: 30px;
+		text-align: center;
 		list-style: none;
 	}
 
@@ -95,17 +88,23 @@ nav {
 		font-weight: var(--typography-a-weight);
 	}
 
+	nav {
+		display: flex;
+	}
+
+	.nav1 {
+		align-items: center;
+	}
+
+	.burger {
+		display: none;
+	}
+
 	.btn1 {
 		display: block;
 	}
-}
 
-@media screen and (min-width: 1024px) {
-	a:hover {
-		color: var(--color-secondary-san-juan-blue-hover);
-	}
-
-	.alignnav {
-		gap: 20px;
+	.none-button {
+		margin-left: auto;
 	}
 }
