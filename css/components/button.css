@@ -15,6 +15,13 @@
 	--button-secondary-disable-state-dark-border: #ffffff;
 	--button-secondary-hover-state-dark-body: #36536b;
 	--button-secondary-disable-state-dark-border: #9ba9b5;
+
+	--button-partenair-border-color: solid #fbfcfe 1px;
+	--button-partenair-txt-color: #fbfcfe;
+	--button-partenair-body: #36536b;
+	--button-partenair-padding: 15px;
+	--button-partenair-radius: 24px;
+	--button-partenair-font-weight: 700;
 }
 
 .btn-primary-light {
@@ -36,4 +43,15 @@
 	font-family: var(--font-family-red-hat);
 	font-weight: var(--typography-a-weight);
 	margin: 20px;
+}
+
+.btn-partnaires {
+	padding: var(--button-partenair-padding);
+	border: var(--button-partenair-border-color);
+	background-color: var(--button-partenair-body);
+	border-radius: var(--button-partenair-radius);
+	color: var(--button-partenair-txt-color);
+	font-family: var(--font-family-red-hat);
+	width: 40%;
+	font-weight: var(--button-partenair-font-weight);
 }
