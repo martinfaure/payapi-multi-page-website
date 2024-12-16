@@ -3,6 +3,7 @@
 	--hero--h1-large-taille-desk: 72px;
 	--hero--h1-large-color: #36536b;
 	--main-color-white: #fbfcfe;
+	--color-font-p: #6c8294;
 
 	--h2-partnaire-font-size: 48px;
 
@@ -24,6 +25,8 @@ input {
 	border-radius: 24px;
 	font-family: var(--font-family-red-hat);
 	font-weight: var(--typography-a-weight);
+	width: 80%;
+	margin-top: 20px;
 }
 
 h1 {
@@ -39,8 +42,10 @@ p {
 
 .hero-input-button {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 section {
@@ -68,6 +73,15 @@ article {
 	align-items: center;
 	background-color: #36536b;
 	margin-top: 50px;
+	padding-bottom: 70px;
+	height: 100vh;
+}
+
+.a-button-form {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .sec2-1 {
@@ -107,6 +121,10 @@ article {
 	margin: 20px;
 }
 
+.sec3-2 img {
+	margin: auto;
+}
+
 .sec3 h3 {
 	font-size: var(--h3-functions-font-size);
 	color: var(--hero--h1-large-color);
@@ -118,20 +136,47 @@ article {
 	font-size: 13px;
 }
 
+.sec3 p {
+	color: var(--color-font-p);
+}
+
 .sec4 {
-	margin-top: 50px;
 	margin: 20px;
-	gap: 40px;
 }
 
 .sec4-1 {
 	margin-top: 50px;
 	text-align: center;
+	font-family: var(--font-family-red-hat);
+}
+
+.sec4-1 h3 {
+	color: var(--hero--h1-large-color);
+}
+
+.sec4-1 p {
+	color: var(--color-font-p);
 }
 
 .img-sec4-1 {
 	margin: auto;
 }
+
+.sec5 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.form {
+	text-align: center;
+}
+
+.ready-h2 {
+	font-family: var(--font-family);
+	color: var(--hero--h1-large-color);
+	font-size: var(--hero--h1-large-taille);
+}
+
 @media screen and (min-width: 767px) {
 	h1 {
 		font-size: var(--typography-heading-h1-tablet);
@@ -141,10 +186,10 @@ article {
 		position: relative;
 		left: 226px;
 		bottom: 20px;
+		width: 30%;
 	}
 
 	input {
-		position: absolute;
 		width: 60%;
 	}
 
@@ -155,7 +200,7 @@ article {
 	.sec2-2 {
 		justify-content: center;
 		align-items: center;
-		width: 75%;
+		width: 50%;
 	}
 
 	.sec-2-2 h2 {
@@ -169,6 +214,15 @@ article {
 	.sec4 {
 		display: flex;
 		flex-direction: row;
+	}
+
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.logo-footer-payapi {
+		margin: 0;
 	}
 }
 

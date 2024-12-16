@@ -42,7 +42,7 @@
 	padding: var(--button-primary-nomal-state-padding);
 	font-family: var(--font-family-red-hat);
 	font-weight: var(--typography-a-weight);
-	margin: 20px;
+	width: 80%;
 }
 
 .btn-partnaires {
