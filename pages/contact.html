@@ -1,15 +1,79 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR-fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" href="/css/components/button.css" />
-		<link rel="stylesheet" href="/css/components/textarea.css" />
-		<link rel="stylesheet" href="/css/components/textfield.css" />
-		<title>Contact</title>
+		<link rel="stylesheet" href="../css/normalize.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/pricing.css" />
+		<link rel="stylesheet" href="../css/contact.css" />
+		<link rel="stylesheet" href="../css/components/button.css" />
+		<title>Pricing</title>
 	</head>
-	<body></body>
+	<body>
+		<header>
+			<div class="borderback">
+				<nav>
+					<div class="nav1">
+						<img src="/assets/header/logo.svg" alt="logo-payapi" />
+						<img
+							class="burger"
+							src="/assets/header/burger.svg"
+							alt="logo-burger"
+						/>
+						<ul class="ul-nav">
+							<li><a href="pages/about.html">About</a></li>
+							<li><a href="pages/contact.html">Contact</a></li>
+							<li><a href="pages/pricing.html">Pricing</a></li>
+						</ul>
+					</div>
+					<div class="none-button">
+						<a class="btn1" href=""
+							><button class="btn-primary-light">Schedule a Demo</button></a
+						>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<form action="">
+				<h1>Submit a help request and we’ll get in touch shortly.</h1>
+				<input type="name" name="name" placeholder="Name" />
+				<input type="email" name="email" placeholder="Email adress" />
+				<input type="email" name="compagny" placeholder="Company Name" />
+				<input type="title" name="title" placeholder="Title" />
+				<textarea name="textarea" id="" placeholder="Message"></textarea>
+				<div class="input-checkbox">
+					<input class="checkbox" type="checkbox" />
+					<p>
+						Stay up-to-date with company announcements and updates to our API
+					</p>
+				</div>
+				<a class="btn-request-price">Submit</a>
+			</form>
+		</main>
+		<footer>
+			<img
+				class="logo-footer-payapi"
+				src="/assets/footer/logo-2.svg"
+				alt="logo-payapi-footer"
+			/>
+			<a href="pages/about.html">About</a>
+			<a href="pages/contact.html">Contact</a>
+			<a href="pages/pricing.html">Pricing</a>
+			<div class="logo-footer">
+				<a href=""
+					><img src="/assets/footer/facebook.svg" alt="logo-facebook" />
+				</a>
+				<a href=""
+					><img src="/assets/footer/tweeter.svg" alt="logo-tweeter"
+				/></a>
+
+				<a href=""
+					><img src="/assets/footer/linkedin.svg" alt="logo-linkedin"
+				/></a>
+			</div>
+		</footer>
+	</body>
 </html>

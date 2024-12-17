@@ -22,6 +22,13 @@
 	--button-partenair-padding: 15px;
 	--button-partenair-radius: 24px;
 	--button-partenair-font-weight: 700;
+
+	--button-price-border-color: solid #36536b 1px;
+	--button-price-txt-color: #36536b;
+	--button-price-body: #edf3f8;
+	--button-price-padding: 15px;
+	--button-price-radius: 24px;
+	--button-price-font-weight: 700;
 }
 
 .btn-primary-light {
@@ -54,4 +61,15 @@
 	font-family: var(--font-family-red-hat);
 	width: 40%;
 	font-weight: var(--button-partenair-font-weight);
+}
+
+.btn-request-price {
+	padding: var(--button-price-padding);
+	border: var(--button-price-border-color);
+	background-color: var(--button-price-body);
+	border-radius: var(--button-price-radius);
+	color: var(--button-price-txt-color);
+	font-family: var(--font-family-red-hat);
+	width: 40%;
+	font-weight: var(--button-price-font-weight);
 }

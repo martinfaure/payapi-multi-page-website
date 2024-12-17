@@ -1,0 +1,61 @@
+:root {
+	--background-color-input: #edf3f8;
+	--h1-font-weight-contact: 400;
+}
+
+h1 {
+	line-height: 36px;
+	width: 100%;
+	font-family: var(--font-family);
+	font-weight: var(--h1-font-weight-contact);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+
+input {
+	background-color: var(--background-color-input);
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #92a3b1;
+	font-family: var(--font-family-red-hat);
+}
+textarea {
+	background-color: var(--background-color-input);
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #92a3b1;
+	font-family: var(--font-family-red-hat);
+}
+
+input:hover {
+	color: black;
+	border-bottom: 1px solid #000000;
+}
+
+.input-checkbox {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+input[type="checkbox"] {
+	width: 2.5rem;
+	accent-color: #ba4270;
+}
+
+.btn-request-price {
+	margin-top: 20px;
+	text-align: center;
+}
