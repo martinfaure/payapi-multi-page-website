@@ -6,8 +6,10 @@
 	--color-font-p: #6c8294;
 
 	--h2-partnaire-font-size: 48px;
-
 	--h3-functions-font-size: 36px;
+
+	--box-shadow-input: 6px 5px 2px 0px rgba(0, 0, 0, 0.3);
+	--background-color-article: #36536b;
 }
 
 .phone-hero {
@@ -19,7 +21,7 @@
 }
 
 input {
-	box-shadow: 6px 5px 2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: var(--box-shadow-input);
 	border: none;
 	padding: 13px;
 	border-radius: 24px;
@@ -71,7 +73,7 @@ article {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #36536b;
+	background-color: var(--background-color-article);
 	margin-top: 50px;
 	padding-bottom: 70px;
 	height: 100vh;
@@ -182,11 +184,15 @@ article {
 		font-size: var(--typography-heading-h1-tablet);
 	}
 
-	.btn-hero {
+	.hero-input-button input {
 		position: relative;
-		left: 226px;
-		bottom: 20px;
-		width: 30%;
+	}
+
+	.btn-hero {
+		position: absolute;
+		bottom: 158px;
+		width: 20%;
+		right: 150px;
 	}
 
 	input {
@@ -232,6 +238,17 @@ article {
 		flex-direction: row-reverse;
 	}
 
+	.hero-input-button input {
+		position: relative;
+	}
+
+	.btn-hero {
+		position: absolute;
+		bottom: 170px;
+		width: 20%;
+		right: 500px;
+	}
+
 	.phone-hero {
 		width: 500px;
 	}
@@ -247,10 +264,6 @@ article {
 		text-align: start;
 		margin: 0;
 		font-size: var(--hero--h1-large-taille-desk);
-	}
-
-	input {
-		width: 30%;
 	}
 
 	.hero-input-button {

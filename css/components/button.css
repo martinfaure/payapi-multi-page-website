@@ -73,3 +73,8 @@
 	width: 40%;
 	font-weight: var(--button-price-font-weight);
 }
+
+.btn-request-price:hover {
+	background-color: var(--button-partenair-body);
+	color: var(--button-price-body);
+}

@@ -1,9 +1,16 @@
 :root {
 	--background-color-input: #edf3f8;
 	--h1-font-weight-contact: 400;
+	--p-color-font: #36536b;
+	--border-input-contact: #92a3b1;
+	--color-input-hover: #000000;
+	--accent-color-checkbox: #ba4270;
+	--box-shadow-input: 6px 5px 2px 0px rgba(0, 0, 0, 0.3);
+	--accent-color-invalid-input: #ff0000;
 }
 
 h1 {
+	text-align: center;
 	line-height: 36px;
 	width: 100%;
 	font-family: var(--font-family);
@@ -13,6 +20,8 @@ h1 {
 main {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 form {
@@ -27,7 +36,7 @@ input {
 	margin: 8px 0;
 	box-sizing: border-box;
 	border: none;
-	border-bottom: 1px solid #92a3b1;
+	border-bottom: 1px solid var(--border-input-contact);
 	font-family: var(--font-family-red-hat);
 }
 textarea {
@@ -36,13 +45,18 @@ textarea {
 	margin: 8px 0;
 	box-sizing: border-box;
 	border: none;
-	border-bottom: 1px solid #92a3b1;
+	border-bottom: 1px solid var(--border-input-contact);
 	font-family: var(--font-family-red-hat);
 }
 
 input:hover {
-	color: black;
-	border-bottom: 1px solid #000000;
+	color: var(--color-input-hover);
+	border-bottom: 1px solid var(--color-input-hover);
+}
+
+textarea:hover {
+	color: var(--color-input-hover);
+	border-bottom: 1px solid var(--color-input-hover);
 }
 
 .input-checkbox {
@@ -50,12 +64,115 @@ input:hover {
 	flex-direction: row;
 	gap: 10px;
 }
+.input-checkbox p {
+	font-family: var(--font-family-red-hat);
+	font-size: 15px;
+	color: var(--p-color-font);
+}
+
 input[type="checkbox"] {
 	width: 2.5rem;
-	accent-color: #ba4270;
+	accent-color: var(--accent-color-checkbox);
 }
 
 .btn-request-price {
 	margin-top: 20px;
 	text-align: center;
+}
+
+.sec2-1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 40px;
+	padding: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	margin: auto;
+	justify-items: center;
+}
+
+h3 {
+	margin-top: 60px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.input-email-contact {
+	box-shadow: var(--box-shadow-input);
+	border: none;
+	padding: 13px;
+	border-radius: 24px;
+	font-family: var(--font-family-red-hat);
+	font-weight: var(--typography-a-weight);
+	width: 80%;
+	margin-top: 20px;
+	display: flex;
+	margin-left: 5%;
+}
+
+.a-button-form {
+	text-decoration: none;
+}
+
+.a-button-form {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.sec1-1 {
+	text-align: start;
+	margin-left: 10%;
+}
+
+input:invalid {
+	color: var(--accent-color-invalid-input);
+	border-bottom: 1px solid var(--accent-color-invalid-input);
+}
+
+@media screen and (min-width: 767px) {
+	form {
+		width: 50%;
+	}
+
+	.h3-partenires-contact {
+		width: 50%;
+	}
+	h1 {
+		font-size: 48px;
+		height: 50%;
+		line-height: 56px;
+	}
+
+	.sec1-1 h3 {
+		font-size: 48px;
+	}
+
+	.sec2-1 {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	footer {
+		text-align: end;
+		padding: 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	main {
+		flex-direction: row;
+		padding: 5%;
+	}
+
+	h1 {
+		text-align: start;
+	}
+	.h3-partenires-contact {
+		width: 100%;
+		text-align: start;
+		margin-left: 40px;
+	}
 }

@@ -7,6 +7,10 @@
 	--font-family-red-hat: "Red Hat Text", serif;
 	--font-family: "DM Serif Display", serif;
 
+	--background-color-body: #edf3f8;
+	--background-color-borderback: #d2dbe3;
+	--background-color-footer: #1b262f;
+
 	--color-primary-dark-pink: #ba4270;
 	--color-primary-link-water-white: #ba4270;
 
@@ -34,7 +38,7 @@
 }
 
 body {
-	background-color: #edf3f8;
+	background-color: var(--background-color-body);
 }
 
 ul {
@@ -62,7 +66,7 @@ nav {
 	position: absolute;
 	width: 100%;
 	height: 25vh;
-	background-color: #d2dbe3;
+	background-color: var(--background-color-borderback);
 	border-radius: 0 0 80% 80%;
 }
 
@@ -72,7 +76,7 @@ nav {
 }
 
 footer {
-	background-color: #1b262f;
+	background-color: var(--background-color-footer);
 	display: flex;
 	text-align: center;
 	justify-content: center;
@@ -95,6 +99,9 @@ footer {
 }
 
 footer a {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 	text-decoration: none;
 	color: var(--color-secondary-san-juan-blue);
 	font-family: var(--font-family-red-hat);
@@ -135,6 +142,10 @@ footer a {
 
 	.none-button {
 		margin-left: auto;
+	}
+
+	footer {
+		flex-direction: row;
 	}
 }
 
